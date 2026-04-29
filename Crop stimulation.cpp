@@ -7,7 +7,7 @@
 #include <vector>
 
 using namespace std;
-
+//---------------MILESTONE 1---------------
 /*// Weather conditions enumeration
 enum Weather { SUNNY, CLOUDY, RAINY, STORM };
 
@@ -169,7 +169,7 @@ public:
         else if (weatherCode < 92) currentWeather = RAINY;
         else currentWeather = STORM;
         
-        // Generate temperature (5캜 to 40캜)
+        // Generate temperature (5째C to 40째C)
         temperature = 5 + (rand() % 36);
     }
     
@@ -189,7 +189,7 @@ public:
     void displayForecast() {
         cout << "\n?? Weather Forecast:" << endl;
         cout << "   Weather: " << getWeatherString() << endl;
-        cout << "   Temperature: " << temperature << "캜" << endl;
+        cout << "   Temperature: " << temperature << "째C" << endl;
         
         if (temperature < 10) cout << "   ?? Cold warning!" << endl;
         else if (temperature > 35) cout << "   ?? Heat warning!" << endl;
@@ -247,7 +247,7 @@ public:
         weather.generateRandomWeather();
         
         cout << "\n?? Day " << dayCounter << " - " << weather.getWeatherString() 
-             << ", " << weather.getTemperature() << "캜" << endl;
+             << ", " << weather.getTemperature() << "째C" << endl;
         
         // Update each crop
         for (size_t i = 0; i < crops.size(); i++) {
@@ -466,6 +466,7 @@ int main() {
 
     return 0;
 } */
+//---------------MILESTONE 2---------------
 
 #include <iostream>
 #include <string>
@@ -517,7 +518,7 @@ public:
         cout << "\nEnter rainfall (mm): ";
         cin >> rainfall;
 
-        cout << "Enter temperature (캜): ";
+        cout << "Enter temperature (째C): ";
         cin >> temperature;
 
         cout << "Enter soil moisture (0-100): ";
